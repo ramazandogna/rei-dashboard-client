@@ -1,0 +1,33 @@
+{
+  "name": "rei-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@iconify/json": "^2.2.177",
+    "@unocss/reset": "^0.58.4",
+    "axios": "^1.6.7",
+    "chart.js": "^4.4.1",
+    "vue": "^3.3.11",
+    "vue-chartjs": "^5.3.0",
+    "vue-router": "^4.2.5",
+    "vue-toast-notification": "^3.1.2"
+  },
+  "devDependencies": {
+    "@unocss/preset-icons": "^0.58.4",
+    "@unocss/preset-uno": "^0.58.4",
+    "@unocss/preset-web-fonts": "^0.58.4",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "typescript": "^5.2.2",
+    "unocss": "^0.58.4",
+    "vite": "^5.0.12",
+    "vue-tsc": "^1.8.25"
+  }
+}
