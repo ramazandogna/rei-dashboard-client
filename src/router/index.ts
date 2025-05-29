@@ -66,18 +66,4 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach(async (to, _from, next) => {
-  const token = document.cookie.split('=')[0] === 'token'
-  if (!token && to.meta.requiresAuth) {
-    // Kullanıcı giriş yapmamışsa ve giriş yapılması gereken bir sayfaya erişmeye çalışıyorsa
-    next('/login')
-  } else if (token && to.meta.requiresUnauth) {
-    // Kullanıcı giriş yapmışsa ve giriş yapılmaması gereken bir sayfaya erişmeye çalışıyorsa
-    next('/')
-  } else {
-    // Diğer durumlarda normal şekilde devam et
-    next()
-  }
-})
-
 export default router
