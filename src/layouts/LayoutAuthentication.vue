@@ -1,7 +1,7 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted, watch, reactive } from 'vue'
 //components
-import Navbar from '../components/Navbar.vue'
+import Navbar from '../components/NavBar.vue'
 import SideMenu from '../components/SideMenu.vue'
 import { UserResponse } from '../types/types'
 import axios from 'axios'
